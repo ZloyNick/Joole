@@ -1,0 +1,19 @@
+{
+    "name": "zloynick/joole",
+    "description": "A simple framework",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "app\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "ZloyNick",
+            "email": "zloynick.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "zloynick/joole-framework": "dev-master"
+    }
+}
