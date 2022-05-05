@@ -7,13 +7,28 @@
             "app\\": "app/"
         }
     },
+    "version": "v8.1.3.1",
     "authors": [
         {
             "name": "ZloyNick",
             "email": "zloynick.dev@gmail.com"
         }
     ],
+    "keywords": [
+        "joole",
+        "framework",
+        "php-framework",
+        "php",
+        "website",
+        "mvc",
+        "php-mvc",
+        "web",
+        "web-application"
+    ],
     "require": {
-        "zloynick/joole-framework": "dev-master"
+        "zloynick/joole-framework": "^8.1.3.1",
+        "zloynick/joole-components-container": "^8.1",
+        "zloynick/joole-components-routing": "^8.1",
+        "zloynick/joole-components-renderer": "8.1.3.1"
     }
 }

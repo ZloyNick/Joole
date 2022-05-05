@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-shell_exec('php -S 127.0.0.1:8080 -t public');//TODO: commands
+shell_exec('php -S 127.0.0.1:80 -t public');//TODO: commands
 
 ?>
