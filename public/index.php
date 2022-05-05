@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
-require_once '../vendor/autoload.php';
+use app\Application;
+use joole\framework\Joole;
 
-echo 11111;
+require_once '../vendor/autoload.php';
+require_once '../php/configuration.php';
+
+$app = new Application();
+
+$app->setConfigurationsDirectory(__DIR__.'/../config/');
+Joole::build($app)->run();

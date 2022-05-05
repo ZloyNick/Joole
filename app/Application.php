@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace app;
 
-use zloynick\joole_framework\Application as BaseApplication;
+use joole\framework\Application as BaseApplication;
+use joole\framework\data\types\ImmutableArray;
 
 /**
  * Class Application based on joole-framework's application class
@@ -12,6 +13,16 @@ use zloynick\joole_framework\Application as BaseApplication;
 class Application extends BaseApplication
 {
 
+    /** @var \ArrayAccess|array Containers */
+    public \ArrayAccess|array $containers;
 
+    public function run()
+    {
+        parent::run();
+
+        /** @var array|ImmutableArray $containers */
+        $containers = $this->getComponent('containers');
+        $this->containers = $containers;
+    }
 
 }
